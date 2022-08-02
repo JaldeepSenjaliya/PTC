@@ -92,16 +92,6 @@ class HomeViewController: UIViewController {
             menubarTableView.isHidden = true
             isSideViewOpened = false
             self.navigationItem.largeTitleDisplayMode = .automatic
-
-//            menubarView.frame = CGRect(x: 0, y: 88, width: 320, height: 838)
-//            menubarTableView.frame = CGRect(x: 0, y: 0, width: 320 , height: 838)
-//            profileView.frame = CGRect(x: 0, y: 0, width: 320, height: 150)
-
-//            UIView.animate(withDuration: 0.3) {
-//                self.menubarView.frame = CGRect(x: 0, y: 88, width: 0, height: 838)
-//                self.menubarTableView.frame = CGRect(x: 0, y: 0, width: 0, height: 838)
-//                self.profileView.frame = CGRect(x: 0, y: 0, width: 0, height: 150)
-//            }
         }
     }
     
@@ -198,27 +188,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                 
             case "Sign Out":
                 print("Sign Out")
-    //            if (userObject != nil) {
-    //
-    //                let resultFlag = currentUser.updateLoginStatus(status: false, email: (userObject?.email)!)
-    //
-    //                if (resultFlag == 0) {
-    //                    let firebaseAuth = Auth.auth()
-    //                    do {
-    //                      try firebaseAuth.signOut()
-    //                    } catch let signOutError as NSError {
-    //                      print ("Error signing out: %@", signOutError)
-    //                    }
-    //                    let storyboard = UIStoryboard(name: "Login", bundle: nil)
-    //                    let vc = storyboard.instantiateViewController(withIdentifier: "newLoginOptions") as! UINavigationController
-    //                    self.present(vc, animated: true, completion: nil)
-    //
-    //                } else {
-    //                    showAlert(title: "Error!", message: "Failed to update login status.", buttonTitle: "Try Again")
-    //                }
-    //            } else {
-    //                showAlert(title: "Error!", message: "There's problem in loging out.", buttonTitle: "Try Again")
-    //            }
                 break
                 
             default:
